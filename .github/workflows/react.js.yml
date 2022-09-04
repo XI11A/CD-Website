@@ -24,7 +24,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install
-    - run: npm test
     - run: npm run build
     - run: cd dist
     - run: git config --global user.name $user_name
