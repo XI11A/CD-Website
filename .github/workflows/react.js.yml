@@ -29,10 +29,11 @@ jobs:
     - run: git config --global user.name $user_name
     - run: git config --global user.email $user_email
     - run: git init 
-    - run: git checkout -b gh-pages
-    - run: git add -A
+    - run: git add .
     - run: git commit -m "Deploy"
-    - run: git push -f git@github.com:XI11A/CD-Website.git main:gh-pages
+    - run: git branch -M gh-pages
+    - run: git remote add origin https://github.com/XI11A/CD-Website.git
+    - run: git push -u origin gh-pages
     
     env:
       user_name: 'XI11A'
