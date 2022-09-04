@@ -29,7 +29,7 @@ jobs:
     - run: git config --global user.name $user_name
     - run: git config --global user.email $user_email
     - run: git init 
-    - run: git checkout -b main
+    - run: git checkout -b gh-pages
     - run: git add -A
     - run: git commit -m "Deploy"
     - run: git push -f git@github.com:XI11A/CD-Website.git main:gh-pages
