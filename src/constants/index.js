@@ -72,19 +72,29 @@ export const feedback = [
 
 export const stats = [
   {
-    id: "stats-1",
-    title: "User Active",
-    value: "3800+",
+    id: "awards",
+    title: "Awards",
+    value: "246",
   },
   {
-    id: "stats-2",
-    title: "Trusted by Company",
-    value: "230+",
+    id: "projects",
+    title: "Projects Done",
+    value: "456",
   },
   {
-    id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
+    id: "expertise",
+    title: "Years of Expertise",
+    value: "6",
+  },
+  {
+    id: "clients",
+    title: "Satisfied Clients",
+    value: "426",
+  },
+  {
+    id: "employees",
+    title: "Expert Employees",
+    value: "258",
   },
 ];
 

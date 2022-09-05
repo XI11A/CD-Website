@@ -6,6 +6,7 @@ import coinbase from "./coinbase.png";
 import dropbox from "./dropbox.png";
 import logo from "./logo.svg";
 import cdlogo from "./cdlogogreen.svg"
+import cloudimg from "./cloudimg.png"
 import quotes from "./quotes.svg";
 import robot from "./robot.png";
 import send from "./Send.svg";
@@ -34,6 +35,7 @@ export {
   dropbox,
   logo,
   cdlogo,
+  cloudimg,
   quotes,
   robot,
   send,
