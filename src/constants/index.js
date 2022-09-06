@@ -39,21 +39,21 @@ export const features = [
     icon: f3,
     title: "Applications Management",
     content:
-      "Project/ Program Management of Cloud Implementations.",
+      "Project / Program Management of Cloud Implementations. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
   },
   {
     id: "feature-4",
     icon: f4,
     title: "Data center",
     content:
-      "Data Center Consolidations.",
+      "Data Center Consolidations. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
   },
   {
     id: "feature-5",
     icon: f5,
     title: "Business Continuity",
     content:
-      "Business Continuity Practices.",
+      "Business Continuity Practices. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
   },
 ];
 
