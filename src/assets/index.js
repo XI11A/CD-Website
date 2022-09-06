@@ -2,6 +2,11 @@ import airbnb from "./airbnb.png";
 import bill from "./bill.png";
 import binance from "./binance.png";
 import card from "./card.png";
+import c1 from "./c1.png";
+import c2 from "./c2.png";
+import c3 from "./c3.png";
+import c4 from "./c4.png";
+import c5 from "./c5.png";
 import coinbase from "./coinbase.png";
 import dropbox from "./dropbox.png";
 import logo from "./logo.svg";
@@ -12,6 +17,11 @@ import robot from "./robot.png";
 import send from "./Send.svg";
 import shield from "./Shield.svg";
 import star from "./Star.svg";
+import f1 from "./f1.svg";
+import f2 from "./f2.svg";
+import f3 from "./f3.svg";
+import f4 from "./f4.svg";
+import f5 from "./f5.svg";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import google from "./google.svg";
@@ -32,6 +42,11 @@ export {
   binance,
   card,
   coinbase,
+  c1,
+  c2,
+  c3,
+  c4,
+  c5,
   dropbox,
   logo,
   cdlogo,
@@ -41,6 +56,11 @@ export {
   send,
   shield,
   star,
+  f1,
+  f2,
+  f3,
+  f4,
+  f5,
   menu,
   close,
   google,

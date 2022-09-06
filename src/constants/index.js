@@ -1,4 +1,4 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star, f1, f2, f3, f4, f5  } from "../assets";
 
 export const navLinks = [
   {
@@ -22,24 +22,38 @@ export const navLinks = [
 export const features = [
   {
     id: "feature-1",
-    icon: star,
-    title: "Rewards",
+    icon: f1,
+    title: "Cloud Neutral",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      "Build Cloud Datacenters in AWS, Azure, Google, etc. based on Business Technology and localization Requirements.",
   },
   {
     id: "feature-2",
-    icon: shield,
-    title: "100% Secured",
+    icon: f2,
+    title: "Cloud Transformation",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      "Infrastructure Design and Architecture based on Application and Technical Requirements.",
   },
   {
     id: "feature-3",
-    icon: send,
-    title: "Balance Transfer",
+    icon: f3,
+    title: "Applications Management",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "Project/ Program Management of Cloud Implementations.",
+  },
+  {
+    id: "feature-4",
+    icon: f4,
+    title: "Data center",
+    content:
+      "Data Center Consolidations.",
+  },
+  {
+    id: "feature-5",
+    icon: f5,
+    title: "Business Continuity",
+    content:
+      "Business Continuity Practices.",
   },
 ];
 
