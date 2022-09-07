@@ -1,5 +1,7 @@
 import airbnb from "./airbnb.png";
 import bill from "./bill.png";
+import cloudstorage from "./cloudstorage.png"
+import assets from "./assets.png"
 import binance from "./binance.png";
 import card from "./card.png";
 import c1 from "./c1.png";
@@ -39,6 +41,8 @@ import people03 from "./people03.png";
 export {
   airbnb,
   bill,
+  cloudstorage,
+  assets,
   binance,
   card,
   coinbase,

@@ -1,5 +1,6 @@
 import styles from "./style";
-import { Navbar, Hero, Stats, Business, Billing, CardDeal, Testimonials, Clients, CTA, Footer} from './components'
+import { Navbar, Hero, Stats, Business, BusinessCard1, BusinessCard2, CardDeal, Testimonials, Clients, CTA, Footer} from './components'
+import { Route, Routes } from "react-router-dom";
 
 const App = () => (
     <div className="bg-primary w-full overflow-hidden">
@@ -19,7 +20,8 @@ const App = () => (
         <div className={`${styles.boxWidth}`}>
           <Stats />
           <Business />
-          <Billing />
+          <BusinessCard1 />
+          <BusinessCard2 />
           <CardDeal />
           <Testimonials />
           <Clients />

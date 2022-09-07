@@ -61,7 +61,7 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
+      "Cloud Destinations partners with us to come up with creative approaches and solutions to solve our real world business challenges, which has led to ample new opportunities. They function as an extension of our own internal department and have been a key part of our success.",
     name: "Herman Jensen",
     title: "Founder & Leader",
     img: people01,
@@ -69,7 +69,7 @@ export const feedback = [
   {
     id: "feedback-2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
+      "Exceptional customer service and very technically proficient support makes Cloud Destinations stand apart.",
     name: "Steve Mark",
     title: "Founder & Leader",
     img: people02,
@@ -77,7 +77,7 @@ export const feedback = [
   {
     id: "feedback-3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
+      "Always reliable and fast, even after I leave for the day, I can always count on you guys to get requests done. Thank you!",
     name: "Kenn Gallagher",
     title: "Founder & Leader",
     img: people03,
