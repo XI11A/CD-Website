@@ -1,7 +1,8 @@
 import { useState } from "react";
 
-import { close, logo, menu, cdlogo} from '../assets';
+import { close, menu, cdlogo} from '../assets';
 import { navLinks } from '../constants';
+import { burgerbtn } from "../style";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -12,7 +13,7 @@ const Navbar = () => {
         {navLinks.map((nav, index) => (
           <li
           key={nav.id}
-          className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? `mr-0` : `mr-10`} text-white` }
+          className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? `mr-0` : `mr-10`} text-white hover:text-secondary link_animation link_animations` }
           >
             <a href={`${nav.id}`}>
               {nav.title}
@@ -22,6 +23,7 @@ const Navbar = () => {
       </ul>
       <div className="sm:hidden flex flex-1 justify-end items-center">
         <img src={toggle ? close : menu} alt="Menu" className="w-[28px] h-[28px] object-contain" onClick={() => setToggle((prev) => !prev)} />
+        {/* <div className={toggle ? burgerbtn.activeHamburger : burgerbtn.burgerbtn} onClick={() => setToggle(!toggle)} /> */}
         <div className={`${toggle ? `flex` : `hidden`} p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
           <ul className="list-none flex flex-col justify-end items-center flex-1">
             {navLinks.map((nav, index) => (

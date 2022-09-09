@@ -4,8 +4,8 @@ import cloudstorage from "./cloudstorage.png"
 import assets from "./assets.png"
 import binance from "./binance.png";
 import card from "./card.png";
-import c1 from "./c1.png";
-import c2 from "./c2.png";
+import c1 from "./c1.svg";
+import c2 from "./c2.svg";
 import c3 from "./c3.png";
 import c4 from "./c4.png";
 import c5 from "./c5.png";
@@ -24,6 +24,7 @@ import f2 from "./f2.svg";
 import f3 from "./f3.svg";
 import f4 from "./f4.svg";
 import f5 from "./f5.svg";
+import favicon from "./favicon.png"
 import menu from "./menu.svg";
 import close from "./close.svg";
 import google from "./google.svg";
@@ -37,6 +38,7 @@ import twitter from "./twitter.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
+import deepak from "./deepak.jfif";
 
 export {
   airbnb,
@@ -65,6 +67,7 @@ export {
   f3,
   f4,
   f5,
+  favicon,
   menu,
   close,
   google,
@@ -78,4 +81,5 @@ export {
   people01,
   people02,
   people03,
+  deepak,
 };
