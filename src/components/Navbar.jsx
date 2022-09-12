@@ -1,28 +1,30 @@
+import React from "react";
 import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 import { close, menu, cdlogo} from '../assets';
 import { navLinks } from '../constants';
-import { burgerbtn } from "../style";
+import styles, { burgerbtn } from "../style";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <nav className="w-full flex py-1 justify-between items-center navbar">
-      <a href="/"><img src={cdlogo} alt="Cloud Destinations Logo" className="w-[200px] h-[88px]" /></a>
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1">
+    <nav className="w-full flex py-1 justify-between items-center">
+      <Link to="/"><img src={cdlogo} alt="Cloud Destinations Logo" className={`w-[200px] h-[88px]`} /></Link>
+      <ul className={`list-none sm:flex hidden justify-end items-center flex-1 ${styles.nav}`}>
         {navLinks.map((nav, index) => (
           <li
           key={nav.id}
           className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? `mr-0` : `mr-10`} text-white hover:text-secondary link_animation link_animations` }
           >
-            <a href={`${nav.id}`}>
+            <NavLink to={`${nav.id}`}>
               {nav.title}
-            </a>
+            </NavLink>
           </li>
         ))}
       </ul>
       <div className="sm:hidden flex flex-1 justify-end items-center">
-        <img src={toggle ? close : menu} alt="Menu" className="w-[28px] h-[28px] object-contain" onClick={() => setToggle((prev) => !prev)} />
+        <img src={toggle ? close : menu} alt="Menu" className="xxs:w-[24px] xxs:h-[24px] w-[28px] h-[28px] object-contain" onClick={() => setToggle((prev) => !prev)} />
         {/* <div className={toggle ? burgerbtn.activeHamburger : burgerbtn.burgerbtn} onClick={() => setToggle(!toggle)} /> */}
         <div className={`${toggle ? `flex` : `hidden`} p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
           <ul className="list-none flex flex-col justify-end items-center flex-1">
@@ -31,14 +33,19 @@ const Navbar = () => {
               key={nav.id}
               className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? `mr-0` : `mb-4`} text-white` }
               >
-                <a href={`${nav.id}`}>
+                <Link to={`${nav.id}`}>
                   {nav.title}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
         </div>
       </div>
+      <Link to="/contactus">
+        <button type="submit" className={`buttonanim w-[240px] h-[40px] hidden sm:flex bg-blue-gradient font-poppins font-semibold text-[15px] text-primary outline-none ${styles} ${styles.flexCenter} rounded-[10px] ml-3`}>
+          <span>Contact us</span>
+        </button>
+      </Link>
     </nav>
   )
 }

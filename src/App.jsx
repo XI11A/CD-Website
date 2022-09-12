@@ -1,11 +1,10 @@
 import styles from "./style";
 import { Navbar, Hero, Stats, Business, BusinessCard1, BusinessCard2, CardDeal, Testimonials, Clients, CTA, Footer} from './components'
-import { Route, Routes } from "react-router-dom";
 
 const App = () => (
     <div className="bg-primary w-full overflow-hidden">
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth}`}>
+        <div className={`${styles.boxWidth}`}> 
           <Navbar />
         </div>
       </div>

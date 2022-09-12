@@ -162,3 +162,28 @@
   width: 100%; 
   left: 0; 
 }
+
+.buttonanim span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonanim span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonanim:hover span {
+  padding-right: 25px;
+}
+
+.buttonanim:hover span:after {
+  opacity: 1;
+  right: 0;
+}
