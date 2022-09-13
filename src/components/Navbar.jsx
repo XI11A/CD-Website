@@ -1,10 +1,12 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-
 import { close, menu, cdlogo} from '../assets';
 import { navLinks } from '../constants';
 import styles, { burgerbtn } from "../style";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { Sling as Hamburger } from "hamburger-react";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -24,7 +26,9 @@ const Navbar = () => {
         ))}
       </ul>
       <div className="sm:hidden flex flex-1 justify-end items-center">
-        <img src={toggle ? close : menu} alt="Menu" className="xxs:w-[24px] xxs:h-[24px] w-[28px] h-[28px] object-contain" onClick={() => setToggle((prev) => !prev)} />
+        {/* <img src={toggle ? close : menu} alt="Menu" className="xxs:w-[24px] xxs:h-[24px] w-[28px] h-[28px] object-contain" onClick={() => setToggle((prev) => !prev)} /> */}
+        {/* <FontAwesomeIcon icon={toggle ? faXmark : faBars} alt="Menu" inverse className="xxs:w-[24px] xxs:h-[24px] w-[28px] h-[28px] object-contain fill-secondary" onClick={() => setToggle((prev) => !prev)} /> */}
+        <Hamburger toggled={toggle} toggle={setToggle} direction="left" color="#00F6FF" size={24} duration={0.7} />
         {/* <div className={toggle ? burgerbtn.activeHamburger : burgerbtn.burgerbtn} onClick={() => setToggle(!toggle)} /> */}
         <div className={`${toggle ? `flex` : `hidden`} p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
           <ul className="list-none flex flex-col justify-end items-center flex-1">
