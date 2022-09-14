@@ -117,20 +117,20 @@ export const footerLinks = [
     title: "Useful Links",
     links: [
       {
-        name: "Content",
-        link: "/content/",
+        name: "Resource",
+        link: "/resource/",
       },
       {
-        name: "How it Works",
-        link: "/how-it-works/",
+        name: "Who we are",
+        link: "/who-we-are/",
       },
       {
-        name: "Create",
-        link: "/create/",
+        name: "What we do",
+        link: "/services/",
       },
       {
-        name: "Explore",
-        link: "/explore/",
+        name: "Why Cloud Destinations",
+        link: "/career/",
       },
       {
         name: "Terms & Services",
@@ -152,10 +152,6 @@ export const footerLinks = [
       {
         name: "Suggestions",
         link: "/suggestions/",
-      },
-      {
-        name: "Blog",
-        link: "/blog/",
       },
       {
         name: "Newsletters",

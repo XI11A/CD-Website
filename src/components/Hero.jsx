@@ -2,6 +2,7 @@ import styles from "../style"
 import { cloudimg } from "../assets"
 import GetStarted from "./GetStarted"
 import { Link } from "react-router-dom"
+import Button from "./Button"
 
 const Hero = () => (
     <section id='home' className={`flex md:flex-row flex-col ${styles.paddingY}`}>
@@ -14,23 +15,25 @@ const Hero = () => (
           </p>
         </div> */}
         <div className="flex flex-row justify-between items-center w-full">
-          <h1 className="flex-1 font-poppins font-semibold xxs:text-[40px] xxs:leading-[100%] ss:text-[72px] text-[52px] text-white ss:leading-[100px] leading-[75px]">
+          <h1 className="flex-1 font-poppins font-semibold xxs:text-[40px] xxs:leading-[100%] ss:text-[72px] text-[52px] text-black ss:leading-[100px] leading-[75px]">
             Cloud <span className="text-gradient">Destinations</span>
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
             <Link to="/contactus">
-            <GetStarted />
+            {/* <GetStarted /> */}
             </Link>
           </div>
         </div>
-
+        
         <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100px] leading-[75px] w-full">
         </h1>
-
+        
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
           Cost Optimization, Budget, Vendor and Contract Management, Hardware & Software Compliance and Warranty Services.
         </p>
-
+        <div className="mt-4">
+          <Button />
+        </div>
       </div>
       <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
         <img src={cloudimg} alt="Cloud Image" className="w-[100%] h-[100%] relative z-[5] sm:w-[80%] xxs:w-[80%]" />

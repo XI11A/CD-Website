@@ -4,6 +4,7 @@ import Partners from "./Partners";
 import Company from "./Company";
 import NotFound from "./NotFound";
 import ContactUs from "./ContactUs";
+import Home from "./Home";
 
 export{
     Services,
@@ -12,4 +13,5 @@ export{
     Company,
     NotFound,
     ContactUs,
+    Home,
 }

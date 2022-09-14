@@ -7,7 +7,7 @@ import { Company, ContactUs, NotFound, Partners, Security, Services } from './pa
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    <Routes>
+    {/* <Routes>
       <Route path='/' element={<App />} />
       <Route path='/services' element={<Services />} />
       <Route path='/security' element={<Security />} />
@@ -15,6 +15,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/partners' element={<Partners />} />
       <Route path="/contactus" element={<ContactUs />} />
       <Route path='*' element={<NotFound />} />
-    </Routes>
+    </Routes> */}
+
+    <App />
+
   </BrowserRouter>
 )

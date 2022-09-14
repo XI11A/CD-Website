@@ -15,11 +15,6 @@ const styles = {
   marginY: "sm:my-16 my-6",
 };
 
-export const nav ={
-  position: "sticky",
-  top: "0",
-}
-
 export const layout = {
   section: `flex md:flex-row flex-col ${styles.paddingY}`,
   sectionReverse: `flex md:flex-row flex-col-reverse ${styles.paddingY}`,
@@ -29,64 +24,5 @@ export const layout = {
 
   sectionInfo: `flex-1 ${styles.flexStart} flex-col`,
 };
-
-export const burgerbtn = {
-  hamburber: {
-    width: "30px",
-    height: "3px",
-    background: "#fff",
-    borderRadius: "5px",
-    boxShadow: "0 2px 5px rgb(255, 101, 47,.2)",
-    transition: "all 0.5s ease-in-out",
-    "&::before": {
-      content: "''",
-      position: "absolute",
-      width: "30px",
-      height: "3px",
-      background: "#fff",
-      borderRadius: "5px",
-      transition: "all 0.5s ease-in-out",
-      transform: "translateY(-10px)",
-    },
-    "&::after": {
-      content: "''",
-      position: "absolute",
-      width: "30px",
-      height: "3px",
-      background: "#fff",
-      borderRadius: "5px",
-      transition: "all 0.5s ease-in-out",
-      transform: "translateY(10px)",
-    },
-  },
-  activeHamburger: {
-    width: "30px",
-    height: "3px",
-    borderRadius: "5px",
-    transform: "translateX(-50px)",
-    background: "transparent",
-    transition: "all 0.5s ease-in-out",
-    "&::before": {
-      content: "''",
-      position: "absolute",
-      width: "30px",
-      height: "3px",
-      background: "#fff",
-      borderRadius: "5px",
-      transition: "all 0.5s ease-in-out",
-      transform: "rotate(45deg) translate(35px, -35px)",
-    },
-    "&::after": {
-      content: "''",
-      position: "absolute",
-      width: "30px",
-      height: "3px",
-      background: "#fff",
-      borderRadius: "5px",
-      transition: "all 0.5s ease-in-out",
-      transform: "rotate(-45deg) translate(35px, 35px)",
-    },
-  },
-}
 
 export default styles;

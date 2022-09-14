@@ -1,21 +1,19 @@
 import { Formik, Form, Field } from 'formik'
 import React, { useState } from 'react'
-import { Navbar,Footer } from '../components'
 import styles from '../style'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from '@fortawesome/fontawesome-free-solid';
+import { Helmet } from 'react-helmet';
 
 const ContactUs = () => {
   const [click, setClick] = useState(false);
   return (
     <div className="bg-primary w-full overflow-hidden">
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth}`}> 
-          <Navbar />
-        </div>
-      </div>
+      <Helmet>
+        <title>CD | Contact Us</title>
+      </Helmet>
 
-      <div className='pb-14'>
+      <div className='mt-24 pb-14'>
         <h2 className={`${styles.heading2} ${styles.flexCenter} ${styles.paddingX}`}>
           <span className='text-gradient'>How we can help you ?</span>
         </h2>
@@ -43,16 +41,11 @@ const ContactUs = () => {
               <Field id="company" name="company" placeholder="Company Name" className="w-[420px] h-[30px] rounded-[6px]" />
               <label htmlFor='name' className='text-gradient'>Phone No.</label>
               <Field id="phone" name="phone" placeholder="Phone" type="number" className="w-[420px] h-[30px] rounded-[6px]" />
-              <button type="submit" className={`w-[85px] h-[45px]  py-4 px-6 bg-blue-gradient font-poppins font-semibold text-[15px] text-primary outline-none ${styles} ${styles.flexCenter} rounded-[10px] mt-4`} onClick={() => setClick((prev) => !prev)}>
+              <button type="submit" className={`w-[85px] h-[45px]  py-4 px-6 bg-blue-gradient font-poppins font-semibold text-[15px] text-primary outline-none ${styles} ${styles.flexCenter} rounded-[10px] mt-4`} disabled={ click ? true : false } onClick={() => setClick((prev) => !prev)}>
                 Submit<FontAwesomeIcon icon={faSpinner} className={`${click ? `w-[100%] ml-2 animate-spin` : `w-[0%]`}`} />
               </button>
             </Form>
           </Formik>
-        </div>
-      </div>
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Footer />
         </div>
       </div>
     </div>
