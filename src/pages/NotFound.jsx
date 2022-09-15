@@ -9,7 +9,7 @@ const NotFound = () => {
       <Helmet>
         <title>CD | Not Found!</title>
       </Helmet>
-        <div className='background-primary mt-[100px] mb-[100px]'>
+        <div className='background-primary mt-[90px]'>
             <h1 className={`${styles.heading2} ${styles.flexCenter} text-gradient`}>404! - Page Not Found</h1>
             <NavLink to="/" className={`${styles.paragraph} ${styles.flexCenter}`}>Go Home!</NavLink>
         </div>

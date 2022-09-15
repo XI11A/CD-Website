@@ -1,11 +1,9 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { close, menu, cdlogo} from '../assets';
+import { cdlogo } from '../assets';
 import { navLinks } from '../constants';
 import styles from "../style";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { Sling as Hamburger } from "hamburger-react";
 
 const Navbar = () => {
@@ -36,6 +34,7 @@ const Navbar = () => {
               <li
               key={nav.id}
               className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? `mr-0` : `mb-4`} text-white` }
+              onClick={() => setToggle((prev) => !prev )}
               >
                 <Link to={`${nav.id}`}>
                   {nav.title}
