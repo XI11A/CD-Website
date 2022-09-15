@@ -17,6 +17,14 @@ export const navLinks = [
     id: "/partners",
     title: "Partners",
   },
+  {
+    id: "/quote",
+    title: "Quote",
+  },
+  {
+    id: "/joke",
+    title: "Joke",
+  },
 ];
 
 export const features = [
@@ -235,3 +243,9 @@ export const clients = [
   //   logo: c5,
   // },
 ];
+
+// export const API_URL = "https://api.xi11a.eu.org/"
+export const API_URL = "http://localhost:8080/"
+export const QUOTES = "quotes"
+export const JOKES = "jokes"
+export const RANDOM = "random"

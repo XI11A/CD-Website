@@ -8,7 +8,7 @@ const Footer = () => (
       <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
         <div className="flex-1 flex flex-col justify-start mr-10">
           <Link to="/">
-          <img src={cdlogo} alt="Cloud Destinations" className="w-[266px] h-[72px] object-contain" />
+          <img src={cdlogo} alt="Cloud Destinations" className="xs:w-[266px] w-[180px] h-[72px] object-contain" />
           </Link>
           <p className={`${styles.paragraph} mt-4 max-w-[310px]`}>Our vision is to be an extension to your team, helping you to manage your Cloud Services, Service Desk Operations leveraging industry Standard ITIL Foundation Framework, Tools and Processes, enabling you to focus on your core business.</p>
         </div>

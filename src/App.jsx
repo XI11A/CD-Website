@@ -1,6 +1,6 @@
 import styles from "./style";
 import { Route, Routes } from "react-router-dom";
-import { Company, ContactUs, Home, NotFound, Partners, Security, Services } from "./pages";
+import { Company, ContactUs, Home, Jokes, NotFound, Partners, Quotes, Security, Services } from "./pages";
 import { Hero, Navbar, Footer } from "./components";
 
 const App = () => (
@@ -10,9 +10,8 @@ const App = () => (
           <Navbar />
         </div>
       </div>
-{/* 
-      {location.pathname === '/' ? 
 
+      {/* {location.pathname === '/' ? 
       <div className={`bg-primary ${styles.flexStart} mt-20`}>
         <div className={`${styles.boxWidth}`}>
           <Hero />
@@ -45,6 +44,8 @@ const App = () => (
               <Route path="/partners" element={<Partners />} />
               <Route path="/security" element={<Security />} />
               <Route path="/services" element={<Services />} />
+              <Route path="/quote" element={<Quotes />} />
+              <Route path="/joke" element={<Jokes />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer />

@@ -13,7 +13,7 @@ const Home = () => {
       <Business />
       <BusinessCard1 />
       <BusinessCard2 />
-      <CardDeal />
+      {/* <CardDeal /> */}
       <Testimonials />
       <CTA />
     </span>
