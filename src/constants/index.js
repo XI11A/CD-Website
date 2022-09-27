@@ -245,7 +245,8 @@ export const clients = [
 ];
 
 // export const API_URL = "https://api.xi11a.eu.org/"
-export const API_URL = "http://localhost:8080/"
+export const API_URL ="https://cd.nivash.eu.org/"
+// export const API_URL = "http://localhost:8080/"
 export const QUOTES = "quotes"
 export const JOKES = "jokes"
 export const RANDOM = "random"
