@@ -117,7 +117,7 @@
 }
 
 .feedback-card {
-  background: transparent;
+  background: darkslategrey;
 }
 
 .feedback-card:hover {
@@ -190,7 +190,7 @@
 
 .navStyle {
   position: fixed;
-  margin-left: -4.5%;
+  margin-left: -6%;
   z-index: 50;
   background: #11101d;
 }

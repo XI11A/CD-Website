@@ -19,9 +19,9 @@ const Hero = () => (
             Cloud <span className="text-gradient">Destinations</span>
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
-            <Link to="/contactus">
+            {/* <Link to="/contactus">
               <GetStarted />
-            </Link>
+            </Link> */}
           </div>
         </div>
         

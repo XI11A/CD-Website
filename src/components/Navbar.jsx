@@ -10,8 +10,8 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav className="w-full flex py-1 justify-between items-center navStyle">
-      <Link to="/"><img src={cdlogo} alt="Cloud Destinations Logo" className={`xxs:ml-1 lg:ml-5 w-[200px] h-[88px]`} /></Link>
-      <ul className={`list-none sm:flex hidden justify-end items-center flex-1 ${styles.nav}`}>
+      <Link to="/"><img src={cdlogo} alt="Cloud Destinations Logo" className={`xxs:ml-4 xs:ml-5 ss:ml-6 lg:ml-10 w-[200px] h-[88px]`} /></Link>
+      <ul className={`list-none md:flex hidden justify-end items-center flex-1 ${styles.nav}`}>
         {navLinks.map((nav, index) => (
           <li
           key={nav.id}
@@ -23,7 +23,7 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <div className="sm:hidden flex flex-1 justify-end items-center mr-3">
+      <div className="md:hidden flex flex-1 justify-end items-center sm:mr-9 mr-3">
         {/* <img src={toggle ? close : menu} alt="Menu" className="xxs:w-[24px] xxs:h-[24px] w-[28px] h-[28px] object-contain" onClick={() => setToggle((prev) => !prev)} /> */}
         {/* <FontAwesomeIcon icon={toggle ? faXmark : faBars} alt="Menu" inverse className="xxs:w-[24px] xxs:h-[24px] w-[28px] h-[28px] object-contain fill-secondary" onClick={() => setToggle((prev) => !prev)} /> */}
         <Hamburger toggled={toggle} toggle={setToggle} direction="left" color="#00F6FF" size={24} duration={0.7} />
@@ -45,7 +45,7 @@ const Navbar = () => {
         </div>
       </div>
       <Link to="/contactus">
-        <button type="submit" className={`buttonanim w-[200px] h-[40px] hidden sm:flex bg-blue-gradient font-poppins font-semibold text-[15px] text-primary outline-none ${styles} ${styles.flexCenter} rounded-[10px] ml-3 mr-6`}>
+        <button type="submit" className={`buttonanim w-[200px] h-[40px] hidden md:flex bg-blue-gradient font-poppins font-semibold text-[15px] text-primary outline-none ${styles} ${styles.flexCenter} rounded-[10px] ml-3 mr-6`}>
           <span>Contact us</span>
         </button>
       </Link>

@@ -7,6 +7,7 @@ import ContactUs from "./ContactUs";
 import Home from "./Home";
 import Jokes from "./Jokes";
 import Quotes from "./Quotes";
+import Resource from "./Resource";
 
 export{
     Services,
@@ -18,4 +19,5 @@ export{
     Home,
     Jokes,
     Quotes,
+    Resource,
 }

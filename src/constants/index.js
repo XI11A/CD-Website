@@ -1,4 +1,4 @@
-import { people01, people02, people03,deepak, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star, f1, f2, f3, f4, f5, c1, c2, c3, c4, c5  } from "../assets";
+import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star, f1, f2, f3, f4, f5, c1, c2, c3, c4, c5, blogimg1, card  } from "../assets";
 
 export const navLinks = [
   {
@@ -249,3 +249,20 @@ export const API_URL = "http://localhost:8080/"
 export const QUOTES = "quotes"
 export const JOKES = "jokes"
 export const RANDOM = "random"
+
+export const resource = [
+  {
+    id: "blog-1",
+    title: "First Test Blog",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare ornare vulputate. Aenean libero leo, tempor eget blandit tincidunt, posuere eget nisi. Fusce efficitur, nulla in tincidunt dignissim, ante urna eleifend nulla, et euismod neque metus quis ante. Aenean interdum ligula vitae nisl feugiat, et ultricies erat cursus. Duis sit.",
+    Date: "2022-09-16",
+    cover: blogimg1
+  },
+  {
+    id: "blog-1",
+    title: "Second Test Blog",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare ornare vulputate. Aenean libero leo, tempor eget blandit tincidunt, posuere eget nisi. Fusce efficitur, nulla in tincidunt dignissim, ante urna eleifend nulla, et euismod neque metus quis ante. Aenean interdum ligula vitae nisl feugiat, et ultricies erat cursus. Duis sit.",
+    Date: "2022-10-16",
+    cover: card,
+  },
+]

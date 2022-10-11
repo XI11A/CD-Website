@@ -1,6 +1,6 @@
 import styles from "./style";
 import { Route, Routes } from "react-router-dom";
-import { Company, ContactUs, Home, Jokes, NotFound, Partners, Quotes, Security, Services } from "./pages";
+import { Company, ContactUs, Home, Jokes, NotFound, Partners, Quotes, Resource, Security, Services } from "./pages";
 import { Hero, Navbar, Footer } from "./components";
 
 const App = () => (
@@ -46,6 +46,7 @@ const App = () => (
               <Route path="/services" element={<Services />} />
               <Route path="/quote" element={<Quotes />} />
               <Route path="/joke" element={<Jokes />} />
+              <Route path="/resource" element={<Resource />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer />
