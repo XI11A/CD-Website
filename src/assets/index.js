@@ -13,6 +13,12 @@ import coinbase from "./coinbase.png";
 import dropbox from "./dropbox.png";
 import logo from "./logo.svg";
 import cdlogo from "./cdlogogreen.svg"
+import cd_logo from "./cd_logo.svg"
+import insider from "./insider.png"
+import cloudcomputing from "./cloud-data-transfer-cloud-computing-technology.mp4"
+import datascience from "./Data Sciences & Data Engineering.png"
+import managedservices from "./Managed Services.png"
+import security from "./Security.png"
 import cloudimg from "./cloudimg.png"
 import quotes from "./quotes.svg";
 import robot from "./robot.png";
@@ -56,6 +62,12 @@ export {
   dropbox,
   logo,
   cdlogo,
+  cd_logo,
+  insider,
+  datascience,
+  managedservices,
+  security,
+  cloudcomputing,
   cloudimg,
   quotes,
   robot,

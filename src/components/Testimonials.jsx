@@ -15,6 +15,11 @@ const Testimonials = () => (
         {feedback.map((card) => (
           <FeedbackCard key={card.id} {...card} />
         ))}
+        {/* <Rerousel interval={3000}>
+        {feedback.map((card) => (
+          <FeedbackCard key={card.id} {...card} />
+        ))}
+        </Rerousel> */}
       </div>
       {/* <div class="space-y-2">
           <span class="block w-8 h-0.5 bg-gray-600"></span>

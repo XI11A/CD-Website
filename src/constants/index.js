@@ -1,4 +1,4 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star, f1, f2, f3, f4, f5, c1, c2, c3, c4, c5, blogimg1, card  } from "../assets";
+import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star, f1, f2, f3, f4, f5, c1, c2, c3, c4, c5, blogimg1, card, datascience, managedservices, security, cloudcomputing  } from "../assets";
 
 export const navLinks = [
   {
@@ -17,14 +17,14 @@ export const navLinks = [
     id: "/partners",
     title: "Partners",
   },
-  {
-    id: "/quote",
-    title: "Quote",
-  },
-  {
-    id: "/joke",
-    title: "Joke",
-  },
+  // {
+  //   id: "/quote",
+  //   title: "Quote",
+  // },
+  // {
+  //   id: "/joke",
+  //   title: "Joke",
+  // },
 ];
 
 export const features = [
@@ -266,3 +266,34 @@ export const resource = [
     cover: card,
   },
 ]
+
+export const carousel = [
+  // {
+  //   id: "1",
+  //   type: "video",
+  //   title: "Cloud Computing",
+  //   detail: "We create the right cloud solutions to drive digital transformation where and when you need them.",
+  //   src: cloudcomputing,
+  // },
+  {
+    id: "2",
+    type: "image",
+    title: "Data Sciences & Data Engineering",
+    detail: "Dream, build & transform your thoughts into actions with a diversified team of Cloud Destination’s engineers.",
+    src: datascience,
+  },
+  {
+    id: "3",
+    type: "image",
+    title: "Managed Services",
+    detail: "Cloud Destinations is one of the top managed services providers around the world, offering managed services for anything from managed storage to complete data centers.",
+    src: managedservices,
+  },
+  {
+    id: "4",
+    type: "image",
+    title: "Security",
+    detail: "Regardless the size and complexity of your business, We help you uncover & accelerate the true benefits of digital technologies with secure and resilient IT infrastructure.",
+    src: security,
+  },
+];

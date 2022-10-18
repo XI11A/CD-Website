@@ -1,27 +1,38 @@
 import React from "react";
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { cdlogo } from '../assets';
+import { cdlogo, cd_logo, insider } from '../assets';
 import { navLinks } from '../constants';
 import styles from "../style";
 import { Sling as Hamburger } from "hamburger-react";
+import { BsFillTelephoneFill } from 'react-icons/bs';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav className="w-full flex py-1 justify-between items-center navStyle">
-      <Link to="/"><img src={cdlogo} alt="Cloud Destinations Logo" className={`xxs:ml-4 xs:ml-5 ss:ml-6 lg:ml-10 w-[200px] h-[88px]`} /></Link>
+      <Link to="/"><img src={cd_logo} alt="Cloud Destinations Logo" className={`xxs:ml-4 xs:ml-5 ss:ml-6 lg:ml-10 w-[200px] h-[88px]`} /></Link>
       <ul className={`list-none md:flex hidden justify-end items-center flex-1 ${styles.nav}`}>
         {navLinks.map((nav, index) => (
           <li
           key={nav.id}
-          className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? `mr-0` : `mr-10`} text-white hover:text-secondary link_animation link_animations` }
+          className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? `mr-0` : `mr-10`} text-black hover:text-[#1eb6bb] hover:font-semibold link_animation link_animations` }
           >
             <NavLink to={`${nav.id}`}>
               {nav.title}
             </NavLink>
           </li>
         ))}
+        <li>
+        <Link to="/contactus">
+          <button type="submit" className={`buttonanim buttoncolor color w-[200px] h-[40px] hidden md:flex font-poppins font-semibold text-[15px] text-primary outline-none ${styles} ${styles.flexCenter} rounded-[10px] ml-3 mr-6`}>
+            <span>Contact us</span>
+          </button>
+        </Link>
+        </li>
+        <li className={`font-poppins font-normal cursor-pointer text-[16px]text-black hover:text-[#1eb6bb]`}>
+          <a href="tel:+18662242680"><BsFillTelephoneFill className="flex flex-wrap" /><span>(+1) 866-224-2680</span></a>
+        </li>
       </ul>
       <div className="md:hidden flex flex-1 justify-end items-center sm:mr-9 mr-3">
         {/* <img src={toggle ? close : menu} alt="Menu" className="xxs:w-[24px] xxs:h-[24px] w-[28px] h-[28px] object-contain" onClick={() => setToggle((prev) => !prev)} /> */}
@@ -44,11 +55,8 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      <Link to="/contactus">
-        <button type="submit" className={`buttonanim w-[200px] h-[40px] hidden md:flex bg-blue-gradient font-poppins font-semibold text-[15px] text-primary outline-none ${styles} ${styles.flexCenter} rounded-[10px] ml-3 mr-6`}>
-          <span>Contact us</span>
-        </button>
-      </Link>
+      
+      <img src={insider} className="md:flex hidden mr-8 ml-8 w-[83px] mt-8" />
     </nav>
   )
 }

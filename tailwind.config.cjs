@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,jsx}"],
+  content: ["./index.html", "./src/**/*.{js,jsx}", './node_modules/tw-elements/dist/js/**/*.js'],
   mode: "jit",
   theme: {
     extend: {
@@ -26,5 +26,6 @@ module.exports = {
   },
   plugins: [
     require("@tailwindcss/forms"),
+    require('tw-elements/dist/plugin')
   ],
 };

@@ -4,7 +4,7 @@ import { Company, ContactUs, Home, Jokes, NotFound, Partners, Quotes, Resource, 
 import { Hero, Navbar, Footer } from "./components";
 
 const App = () => (
-    <div className="bg-primary w-full overflow-hidden">
+    <div className="bg-white w-full overflow-hidden">
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}> 
           <Navbar />
@@ -19,7 +19,7 @@ const App = () => (
       </div> : null
       } */}
 
-      <div className={`bg-primary ${styles.flexStart} mt-20`}>
+      <div className={`bg-white ${styles.flexStart} mt-20`}>
         <div className={`${styles.boxWidth}`}>
           <Routes>
             <Route path="/" element={<Hero />} />
@@ -35,7 +35,7 @@ const App = () => (
         <Footer />
       </div> */}
       <div>
-        <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+        <div className={`bg-white ${styles.paddingX} ${styles.flexStart}`}>
           <div className={`${styles.boxWidth}`}>
             <Routes>
               <Route path="/" element={<Home />} />
